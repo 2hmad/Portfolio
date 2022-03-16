@@ -38,6 +38,7 @@
   </section>
 </template>
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -45,15 +46,15 @@ export default {
       works: [],
     };
   },
-  async fetch() {
-    this.educations = await fetch(
-      `http://127.0.0.1:8000/api/experiences/education`
-    )
-      .then((response) => response.json())
-      .catch((error) => console.log(error));
-    this.works = await fetch(`http://127.0.0.1:8000/api/experiences/work`)
-      .then((response) => response.json())
-      .catch((error) => console.log(error));
+  mounted() {
+    axios
+      .get("http://127.0.0.1:8000/api/experiences/education")
+      .then((res) => (this.educations = res.data))
+      .catch((err) => console.log(err));
+    axios
+      .get("http://127.0.0.1:8000/api/experiences/work")
+      .then((res) => (this.works = res.data))
+      .catch((err) => console.log(err));
   },
 };
 </script>

@@ -3,7 +3,7 @@
     <h1 class="SectionTitle">About Me</h1>
     <div class="downloadCv">
       <div class="pic">
-        <img src="images/1642511588888.jpg" />
+        <img src="/images/1642511588888.jpg" />
       </div>
       <div class="box">
         <p>

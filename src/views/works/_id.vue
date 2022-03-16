@@ -30,12 +30,24 @@
   </div>
 </template>
 <script>
+import Sidebar from "@/components/Sidebar.vue";
+import { RouterLink } from "vue-router";
+import axios from "axios";
+// import VueGallerySlideshow from "vue-gallery-slideshow";
 export default {
-  async asyncData({ params, $http }) {
-    const project = await $http.$get(
-      `http://127.0.0.1:8000/api/project/${params.id}`
-    );
-    return { project };
+  components: {
+    Sidebar,
+  },
+  data() {
+    return {
+      project: [],
+    };
+  },
+  mounted() {
+    axios
+      .get(`http://127.0.0.1:8000/api/project/${this.$route.params.id}`)
+      .then((response) => (this.project = response.data))
+      .catch((error) => console.log(error));
   },
 };
 </script>

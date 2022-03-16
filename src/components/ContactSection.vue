@@ -90,21 +90,13 @@ export default {
   },
   methods: {
     contact() {
-      this.$axios({
-        method: "POST",
-        url: "http://127.0.0.1:8000/api/contact",
-        data: {
+      axios
+        .post("http://127.0.0.1:8000/api/contact", {
           name: this.name,
           email: this.email,
           subject: this.subject,
           message: this.message,
-        },
-        headers: {
-          common: {
-            Accept: "application/json",
-          },
-        },
-      })
+        })
         .then(
           (res) =>
             (document.querySelector(".success-alert").style.display = "block"),

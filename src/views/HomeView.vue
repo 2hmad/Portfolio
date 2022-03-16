@@ -4,7 +4,7 @@
       <div class="header-desktop">
         <Sidebar />
       </div>
-      <main class="content">
+      <main class="content" v-scroll-spy>
         <HeadingSection />
         <AboutSection />
         <ServicesSection />

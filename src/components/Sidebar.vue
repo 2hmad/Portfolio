@@ -3,7 +3,11 @@
     <div class="logo">
       <h1>Ahmed</h1>
     </div>
-    <ul class="list">
+    <ul
+      class="list"
+      v-scroll-spy-active="{ class: 'activeLink' }"
+      v-scroll-spy-link
+    >
       <li>
         <router-link to="/#">
           <font-awesome-icon icon="home" /> Home
@@ -37,9 +41,6 @@
     </ul>
   </div>
 </template>
-<script>
+<script setup>
 import { RouterLink } from "vue-router";
-export default {
-  setup() {},
-};
 </script>

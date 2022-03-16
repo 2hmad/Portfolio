@@ -17,15 +17,17 @@
 </template>
 <script>
 import { RouterLink } from "vue-router";
+import axios from "axios";
 export default {
   data() {
     return {
       projects: [],
     };
   },
-  async fetch() {
-    this.projects = await fetch(`http://127.0.0.1:8000/api/projects/limit`)
-      .then((response) => response.json())
+  mounted() {
+    axios
+      .get("http://127.0.0.1:8000/api/projects/limit")
+      .then((response) => (this.projects = response.data))
       .catch((error) => console.log(error));
   },
 };

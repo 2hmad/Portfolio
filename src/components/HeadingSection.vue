@@ -2,7 +2,7 @@
   <section class="home_section" id="home">
     <div class="info">
       <div class="pic">
-        <img src="images/1642511588888.jpg" />
+        <img src="/images/1642511588888.jpg" />
       </div>
       <h1>Ahmed M. Ibrahim</h1>
       <vue-typed-js

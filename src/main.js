@@ -20,6 +20,7 @@ import {
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { registerScrollSpy } from "vue3-scroll-spy";
 
 const app = createApp(App);
 
@@ -38,6 +39,8 @@ library.add(
   faThumbtack,
   faChevronLeft
 );
+
+registerScrollSpy(app);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 
