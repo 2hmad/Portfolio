@@ -5,7 +5,7 @@
     </div>
     <ul class="list">
       <li>
-        <router-link to="/">
+        <router-link to="/#">
           <font-awesome-icon icon="home" /> Home
         </router-link>
       </li>

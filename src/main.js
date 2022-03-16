@@ -17,6 +17,7 @@ import {
   faEnvelope,
   faPhone,
   faThumbtack,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -34,7 +35,8 @@ library.add(
   faBan,
   faEnvelope,
   faPhone,
-  faThumbtack
+  faThumbtack,
+  faChevronLeft
 );
 
 app.component("font-awesome-icon", FontAwesomeIcon);
