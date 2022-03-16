@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  background-color: #353353;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+.content {
+  padding: 20px;
+}
+.back-mobile {
+  display: none;
+  color: white;
+  font-size: 25px;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+.success-alert {
+  background-color: rgb(62, 131, 62);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  display: none;
+}
+.danger-alert {
+  background-color: #fc213b;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  display: none;
+}
+
+@import "sidebar";
+@import "heading";
+@import "aboutSection";
+@import "servicesSection";
+@import "experienceSection";
+@import "worksSection";
+@import "contactSection";
+@import "worksPage";
+@import "projectPage";

@@ -1,0 +1,42 @@
+.servicesSection {
+  margin-top: 10%;
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    .box {
+      &:nth-child(1) {
+        background-color: #6c6ce5;
+        box-shadow: #6c6ce580 0px 5px 20px 0px;
+      }
+      &:nth-child(2) {
+        background-color: #6c6ce5;
+        box-shadow: #6c6ce580 0px 5px 20px 0px;
+      }
+      &:nth-child(3) {
+        background-color: #6c6ce5;
+        box-shadow: #6c6ce580 0px 5px 20px 0px;
+      }
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      .cardInfo {
+        margin-top: 20px;
+      }
+      .cardInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

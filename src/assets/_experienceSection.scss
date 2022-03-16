@@ -1,0 +1,65 @@
+.experienceSection {
+  margin-top: 10%;
+
+  .sectionTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+  .sides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    .side {
+      background: #302f4e;
+      min-height: 150px;
+      width: 100%;
+      border-radius: 20px;
+      display: flex;
+    }
+  }
+  .timeline {
+    background: var(--primary-color);
+    margin: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .outer {
+    border-left: 2px solid #ff4c60;
+  }
+
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .date {
+    color: #8b88b1;
+    font-size: 14px;
+  }
+  .title {
+    color: white;
+    position: relative;
+  }
+
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+  }
+}

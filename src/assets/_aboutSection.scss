@@ -1,0 +1,96 @@
+.aboutSection {
+  margin-top: 10%;
+
+  .SectionTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+  .SectionTitle:before {
+    content: "";
+    background: url("/images/dots-bg-light.svg") no-repeat;
+    display: block;
+    height: 37px;
+    width: 37px;
+    position: relative;
+    top: 18px;
+  }
+  .downloadCv {
+    display: flex;
+    gap: 55px;
+    @media only screen and (max-width: 768px) {
+      .pic {
+        display: none;
+      }
+    }
+    .pic {
+      width: 100px;
+      height: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  .box {
+    background-color: #302f4e;
+    padding: 15px;
+    line-height: 2em;
+    border-radius: 15px;
+    margin-right: 5%;
+    max-width: 800px;
+  }
+  .downloadBtn {
+    background-color: #ff4c60;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    max-width: 200px;
+    margin-top: 2%;
+  }
+  .statistics {
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-items: center;
+    gap: 20px;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  .item {
+    display: flex;
+    gap: 25px;
+    .icon {
+      font-size: 45px;
+      color: white;
+    }
+  }
+  .title {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .count {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      display: block;
+    }
+    .countTitle {
+      font-size: 15px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+}

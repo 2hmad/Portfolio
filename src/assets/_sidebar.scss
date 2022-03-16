@@ -1,0 +1,32 @@
+.header {
+  padding: 25px;
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 999;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+  .logo {
+    h1 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+  .list {
+    position: absolute;
+    top: 25%;
+    line-height: 3em;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .activeLink a {
+    color: #ff4c60;
+  }
+  .footer {
+    color: #9c9ab3;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+  }
+}

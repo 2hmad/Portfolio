@@ -1,0 +1,100 @@
+.container {
+  background-color: #353353;
+}
+.content {
+  margin-left: 300px;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+.home_section {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  .info {
+    .pic {
+      margin-bottom: 4%;
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  .social {
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+    img {
+      width: 20px;
+    }
+  }
+  .hire_me {
+    background-color: #ff4c60;
+    width: 160px;
+    border-radius: 25px;
+    padding: 13px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .mouse {
+    border: 2px solid #fff;
+    border-radius: 16px;
+    display: block;
+    margin: 10px auto auto;
+    position: absolute;
+    bottom: 26px;
+    width: 20px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .mouse .wheel {
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 4px;
+    -webkit-animation: mouse-wheel 2s linear infinite;
+    animation: mouse-wheel 1.5s linear infinite;
+    border-radius: 100%;
+  }
+  @keyframes mouse-wheel {
+    0% {
+      top: 29%;
+    }
+    15% {
+      top: 50%;
+    }
+    50% {
+      top: 50%;
+    }
+    100% {
+      top: 29%;
+    }
+  }
+  .scrollDown {
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+}
