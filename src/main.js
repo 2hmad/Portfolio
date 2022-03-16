@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import VueLazyload from "vue-lazyload";
-import VueTypedJs from "vue-typed-js";
+import { VueTyper } from "vue-typer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCoffee,
@@ -42,8 +42,10 @@ library.add(
 
 registerScrollSpy(app);
 
-app.component("font-awesome-icon", FontAwesomeIcon);
+app
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .component("vue-typer", VueTyper);
 
-app.use(router, VueLazyload, VueTypedJs);
+app.use(router, VueLazyload);
 
 app.mount("#app");
